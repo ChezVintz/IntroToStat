@@ -1,0 +1,20 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(ggplot2)
+```
+
+
+
+```{r}
+set.seed(123)
+population<-data.frame(Taille=rnorm(10000))
+ggplot(population, aes(x=Taille))+geom_histogram(aes(y=..density..),binwidth = 0.1)
+
+
+```
+
+
